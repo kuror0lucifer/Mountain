@@ -1,9 +1,9 @@
 const popup = document.querySelector('.popup_profile');
-const profile = document.querySelector('.a_profile');
+const profile = document.querySelector('.profile_svg');
 
 profile.addEventListener('click', function () {
     if ( popup.style.display === 'none') {
-        popup.style.display = 'block';
+        popup.style.display = 'flex';
         popup.classList.remove('popup_animation_exit');
         popup.classList.add('popup_animation_enter');
     } else if (popup.style.display !== 'none'){
@@ -11,11 +11,12 @@ profile.addEventListener('click', function () {
         // popup.classList.remove('popup_animation_enter');
         popup.style.display = 'none';
 
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                popup.classList.add('popup_animation_exit');
+            }
+        })
     }
 })
 
-document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape') {
-        popup.classList.add('popup_animation_exit');
-    }
-})
+

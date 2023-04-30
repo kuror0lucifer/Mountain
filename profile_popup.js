@@ -11,11 +11,12 @@ profile.addEventListener('click', function () {
         // popup.classList.remove('popup_animation_enter');
         popup.style.display = 'none';
 
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
-                popup.classList.add('popup_animation_exit');
-            }
-        })
+    }
+})
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        popup.classList.add('popup_animation_exit');
     }
 })
 

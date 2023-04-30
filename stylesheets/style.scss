@@ -138,7 +138,7 @@ header {
 }
 
 .popup_profile {
-    display: none;
+    // display: none;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -155,6 +155,8 @@ header {
     padding: 0vh 2vw 2vh 1.5vw;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    font-family: $font_special;
    }
    .popup_profile::before, .popup_profile::after {
     content: ''; 
@@ -204,14 +206,14 @@ header {
     width: 95%;
     height: 2vw;
 
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 
     font-size: 1vw;
     color: white;
 
     padding-left: 0.5vw;
 
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px 0 rgba(31, 31, 31, 0.5);
 }
 .input_popup:last-child {
     margin-bottom: 0;
@@ -231,6 +233,13 @@ header {
     height: 4vh;
 
     color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.button_popup::hover {
+    opacity: 0.5;
+}
+.button_popup:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .main_p {
     font-family: $font_special !important;
@@ -443,7 +452,7 @@ header {
     width: 100%;
     height: 92vh;
     background: linear-gradient(0deg, rgba(6, 27, 40, 0.4), rgba(6, 27, 40, 0.4)), url('/img/background_tours.jpg') no-repeat;
-    background-size: cover;
+    background-size:100vw 150vh;
 }
 
 .title_list_tours {
@@ -815,4 +824,8 @@ footer {
     font-size: 24px;
     line-height: 36px;
     font-family: $font_special;
+}
+
+.show {
+    display: none;
 }

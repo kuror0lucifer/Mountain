@@ -15,11 +15,11 @@
             <div class="flex_header">
                 <span class="logo_header"><a href="#">MOUNTAIN</a></span>
                 <div class="header_nav">
-                    <a href=""><span class="span_header">О нас</span></a>
-                    <a href=""><span class="span_header">Туры</span></a>
-                    <a href=""><span class="span_header">Подбор тура</span></a>
-                    <a href=""><span class="span_header">Блог</span></a>
-                    <a href=""><span class="span_header">Контакты</span></a>
+                    <a href="#about"><span class="span_header">О нас</span></a>
+                    <a href="#tours"><span class="span_header">Туры</span></a>
+                    <a href="#variable_tours"><span class="span_header">Подбор тура</span></a>
+                    <a href="#blog"><span class="span_header">Блог</span></a>
+                    <a href="#contacts"><span class="span_header">Контакты</span></a>
                 </div>
                 <div class="tel">
                     <span class="span_header phone">8 (800) 777-33-25</span>
@@ -57,20 +57,21 @@
     </header>
     <main>
         <div style="width: 100%; height: 80vh">
-            <div class="map"> 
+            <div class="map "> 
                 <img src="/img/map.png" alt="map" class="map">
             </div>
-            <article class="map_arctical">   
-                <p>Туры с восхождением <br> на вершины мира</p>
+            <article class="map_arctical ">   
+                <p> <a name="about"></a> Туры с восхождением <br> на вершины мира</p>
             </article>
-            <article class="map_text">
+            <article class="map_text ">
                 <p>Мы являемся экспертами в организации альпинистских туров для опытных альпинистов и для новичков. Вы можете доверить нам полную организацию вашего приключения от А до Я и быть уверенными в качестве и безопасности восхождения.
                     <br> <br> Наша компания предоставляет все необходимое: консультацию по выбору тура, перелет, визу, бронирование проживания, питание, оборудование, необходимое для восхождения, опытных гидов, полное сопровождение.</p>
             </article>
         </div>
-        <p class="popular_tours">Популярные туры</p>
+        <a name="tours"></a>
+        <p class="popular_tours ">  Популярные туры</p>
         <div class="flex">
-        <div class="cart_tour1 gradient">
+        <div class="cart_tour1 gradient ">
             <div class="country">            
                 <img src="/img/marker.svg" alt="marker" class="country_img">
                 Россия
@@ -82,7 +83,7 @@
                 <p class="difficult_middle cart_p_info">Средний уровень</p> 
             </div>
         </div>
-        <div class="cart_tour2">
+        <div class="cart_tour2 ">
             <div class="country">
                 <img src="/img/marker.svg" alt="marker" class="country_img">
                 Россия
@@ -94,7 +95,7 @@
                 <p class="difficult_middle cart_p_info">Средний уровень</p> 
             </div>
         </div>
-        <div class="cart_tour3">
+        <div class="cart_tour3 ">
             <div class="country">            
                 <img src="/img/marker.svg" alt="marker" class="country_img">
                 Танзания
@@ -112,7 +113,9 @@
         <div class="button_arrow arrow_right"><p class=""></p></div>
     </div>  
     <div class="list_tours">
-        <h1 class="title_list_tours">Россия</h1>
+        <a name="variable_tours"></a>
+
+        <h1 class="title_list_tours">  Россия</h1>
         <div class="about_list_tours">Более 15 туров для <br> альпинистов всех уровней</div>
         <div class="options_list_tours options_first">
             <div class="text_options_first tours_div">
@@ -243,7 +246,8 @@
         <a href="#no-scroll" id="list"><div class="button button_list_tours"><p>Смотреть все</p></div></a>
     </div>
     <div class="test">
-        <div class="blog">Блог</div>
+        <div class="blog"><a name="blog"></a>Блог</div>
+        
         <div class="blog_flex">
             <div class="detailed_article hidden animation">
                 <img src="/img/blog_img.jpg" alt="Альпинисты" class="blog_img">    
@@ -333,6 +337,7 @@
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afb2912011615df3337532ebfee1a7f7ec95f3cab88c4a2234ba3a1d1d5fb8ef9&amp;width=600&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
         <div class="contacts_items">
+            <a name="contacts"></a>
             <h1 class="contacts_h1">Контакты</h1>
             <span class="contacts_mini_p">Адрес:</span>
             <span class="contacts_about">Санкт-Петербург, <br>ул. Большая Конюшенная, 19</span>
@@ -359,5 +364,6 @@
     <script src="/search.js"></script>
     <script src="/profile_popup.js"></script>
     <script src="/list.js"></script>
+    <script src="/animation.js"></script>
 </body>
 </html> 

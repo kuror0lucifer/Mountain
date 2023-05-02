@@ -1,5 +1,8 @@
 $font_body: Roboto, sans-serif;
 $font_special: Oswald, sans-serif;
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $font_body;  
 }
@@ -222,6 +225,9 @@ header {
     color: white;
     font-size: 0.8vw;
 }
+.input_popup:focus::placeholder {
+    font-size: 1vw;
+}
 
 .button_popup {
     border: none;
@@ -304,12 +310,16 @@ header {
     margin-top: 15vh;
 }
 
+      
+
+
 .popular_tours {
     display: flex;
     justify-content: center;
     font-family: $font_special;
     font-size: 4vw;
     margin-top: 17vh;
+
 }
 
 .cart_tour1 {
@@ -317,6 +327,7 @@ header {
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);    
     width: 24.3vw;
     height: 39.6vh;
+
 }
 .cart_tour2 {
     background: linear-gradient(180deg, rgba(249, 249, 250, 0) 0%, rgba(249, 249, 250, 0.9) 100%) no-repeat, url("/img/cart2.jpg") no-repeat;
@@ -329,6 +340,7 @@ header {
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     width: 24.5vw;
     height: 39.6vh;
+
 }
 
 .country_img {
